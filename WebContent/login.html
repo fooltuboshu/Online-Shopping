@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<!--Made with love by Mutiullah Samim -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="register.css">
+
+</head>
+<body>
+
+	<div id="outer">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="index.jsp">eShop</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a
+						class="nav-link waves-effect waves-light" href="login.html"> <i
+							class="fas fa-envelope"></i> Login <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item"><a
+						class="nav-link waves-effect waves-light" href="register.html">
+							<i class="fas fa-gear"></i> SignUp
+					</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+
+	<div class="container">
+		<div class="card bg-light">
+			<article class="card-body mx-auto" style="max-width: 400px;">
+				<h4 class="card-title mt-3 text-center">Log In Your Account</h4>
+				<p class="text-center">Get started with your shopping</p>
+				<p>
+					<a href="" class="btn btn-block btn-twitter"> <i
+						class="fab fa-twitter"></i>   Login via Twitter
+					</a> <a href="" class="btn btn-block btn-facebook"><i
+						class="fab fa-facebook-f"></i>   Login via Facebook</a>
+				</p>
+				<p class="divider-text">
+					<span class="bg-light">OR</span>
+				</p>
+				<form action="./LoginSrv" method="post">
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" name="username" class="form-control"
+							placeholder="Enter Email-Id" required>
+
+					</div>
+					
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" name="password" class="form-control"
+							placeholder="password" required>
+					</div>
+					
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-phone"></i>
+							</span>
+						</div>
+						<select class="bootstrap-select" name="usertype"
+							style="font-size: 16px;" required>
+							<option value="customer">Customer</option>
+							<option value="admin">Admin</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-block">
+							Log In</button>
+					</div>
+					<!-- form-group// -->
+					<p class="text-center">
+						Don't have an account? <a href="register.html">Sign Up</a>
+					</p>
+				</form>
+			</article>
+		</div>
+		<!-- card.// -->
+
+	</div>
+
+
+
+</body>
+</html>

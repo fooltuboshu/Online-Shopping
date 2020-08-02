@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shoping Center</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+<body>
+
+
+	<div id="outer">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="index.jsp">eShop</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+				<ul class="navbar-nav ml-auto">
+
+
+					<li class="nav-item active"><a
+						class="nav-link waves-effect waves-light"
+						href="adminViewProduct.jsp"> <i class="fas fa-envelope"></i>
+							Products <span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item active"><a
+						class="nav-link waves-effect waves-light" href="adminStock.jsp">
+							<i class="fas fa-envelope"></i> Stock <span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a
+						class="nav-link waves-effect waves-light" href="shippedItems.jsp">
+							<i class="fas fa-gear"></i> Shipped
+					</a></li>
+					<li class="nav-item"><a
+						class="nav-link waves-effect waves-light"
+						href="unshippedItems.jsp"> <i class="fas fa-gear"></i> Orders
+					</a></li>
+
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false"> Update Items </a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="addProduct.jsp">Add Product</a> <a
+								class="dropdown-item" href="removeProduct.jsp">Remove
+								Product</a> <a class="dropdown-item" href="updateProductById.jsp">Update
+								Product</a>
+						</div></li>
+					<li class="nav-item"><a
+						class="nav-link waves-effect waves-light" href="./LogoutSrv">
+							<i class="fas fa-gear"></i> Logout
+					</a></li>
+
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<!-- End of Navigation Bar -->
+	<div class="jumbotron text-center">
+		<h1>Welcome to eShop</h1>
+		<p>We focus on what you need</p>
+		<p align="center"
+			style="color: blue; font-weight: bold; margin-top: 15px; margin-bottom: -15px;"
+			id="message"></p>
+	</div>
+
+
+</body>
+</html>
